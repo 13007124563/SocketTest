@@ -11,6 +11,10 @@
 #import <netinet/in.h>
 #import <arpa/inet.h>
 
+/*
+ 服务器可以使用终端命令：nc -lk SocketPort
+ 也可以自己自己写一个本地socket服务端
+ */
 //htons : 将一个无符号短整型的主机数值转换为网络字节顺序，不同cpu 是不同的顺序 (big-endian大尾顺序 , little-endian小尾顺序)
 #define SocketPort htons(8040)
 //inet_addr是一个计算机函数，功能是将一个点分十进制的IP转换成一个长整数型数
