@@ -14,6 +14,7 @@
 		3202E9F6252AF4D900E4D4F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3202E9F5252AF4D900E4D4F3 /* Assets.xcassets */; };
 		3202E9F9252AF4D900E4D4F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3202E9F7252AF4D900E4D4F3 /* LaunchScreen.storyboard */; };
 		3202E9FC252AF4D900E4D4F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3202E9FB252AF4D900E4D4F3 /* main.m */; };
+		3202EA10252B1AE900E4D4F3 /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3202EA0F252B1AE900E4D4F3 /* ServerViewController.m */; };
 		D8156B8C009FBFEFDBD88B4B /* libPods-SocketTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4322851E9BEED867BA5265B7 /* libPods-SocketTest.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		3202E9F8252AF4D900E4D4F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3202E9FA252AF4D900E4D4F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3202E9FB252AF4D900E4D4F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3202EA0E252B1AE900E4D4F3 /* ServerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerViewController.h; sourceTree = "<group>"; };
+		3202EA0F252B1AE900E4D4F3 /* ServerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerViewController.m; sourceTree = "<group>"; };
 		4322851E9BEED867BA5265B7 /* libPods-SocketTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocketTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		803FFF91782F8C879FD0774A /* Pods-SocketTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketTest.release.xcconfig"; path = "Target Support Files/Pods-SocketTest/Pods-SocketTest.release.xcconfig"; sourceTree = "<group>"; };
 		EF6CCE89337DE71467BF9579 /* Pods-SocketTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketTest.debug.xcconfig"; path = "Target Support Files/Pods-SocketTest/Pods-SocketTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 				3202E9ED252AF4D700E4D4F3 /* SceneDelegate.m */,
 				3202E9EF252AF4D700E4D4F3 /* ViewController.h */,
 				3202E9F0252AF4D700E4D4F3 /* ViewController.m */,
+				3202EA0E252B1AE900E4D4F3 /* ServerViewController.h */,
+				3202EA0F252B1AE900E4D4F3 /* ServerViewController.m */,
 				3202E9F2252AF4D700E4D4F3 /* Main.storyboard */,
 				3202E9F5252AF4D900E4D4F3 /* Assets.xcassets */,
 				3202E9F7252AF4D900E4D4F3 /* LaunchScreen.storyboard */,
@@ -97,7 +102,6 @@
 				EF6CCE89337DE71467BF9579 /* Pods-SocketTest.debug.xcconfig */,
 				803FFF91782F8C879FD0774A /* Pods-SocketTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -200,6 +204,7 @@
 				3202E9EB252AF4D700E4D4F3 /* AppDelegate.m in Sources */,
 				3202E9FC252AF4D900E4D4F3 /* main.m in Sources */,
 				3202E9EE252AF4D700E4D4F3 /* SceneDelegate.m in Sources */,
+				3202EA10252B1AE900E4D4F3 /* ServerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

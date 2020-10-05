@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "ServerViewController.h"
 #import <Masonry/Masonry.h>
 
 #import <sys/socket.h>
@@ -30,6 +31,11 @@
 // MARK: - Socket
 //用于接收socket创建成功后的返回值
 @property (nonatomic, assign) int clientID;
+
+// MARK: - Server
+@property (nonatomic, strong) ServerViewController *serverVC;
+
+@property (nonatomic, strong) UIButton *serverConfigBtn;
 
 @end
 
@@ -68,6 +74,12 @@
         make.left.equalTo(self.view).offset(50);
         make.right.equalTo(self.view).offset(-50);
         make.height.equalTo(@300);
+    }];
+    
+    [self.view addSubview:self.serverConfigBtn];
+    [self.serverConfigBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.height.width.equalTo(self.connectBtn);
+        make.top.equalTo(self.logTextView.mas_bottom).offset(50);
     }];
     
 }
@@ -178,6 +190,10 @@
     });
 }
 
+- (void)serverConfigBtnClick {
+    [self presentViewController:self.serverVC animated:YES completion:nil];
+}
+
 // MARK: - Getter && Setter
 
 - (UIButton *)connectBtn {
@@ -222,4 +238,23 @@
     return _logTextView;
 }
 
+- (UIButton *)serverConfigBtn {
+    if (!_serverConfigBtn) {
+        _serverConfigBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _serverConfigBtn.backgroundColor = UIColor.orangeColor;
+        [_serverConfigBtn setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
+        [_serverConfigBtn addTarget:self action:@selector(serverConfigBtnClick) forControlEvents:UIControlEventTouchUpInside];
+        [_serverConfigBtn setTitle:@"配置Server" forState:UIControlStateNormal];
+    }
+    
+    return _serverConfigBtn;
+}
+
+- (ServerViewController *)serverVC {
+    if (!_serverVC) {
+        _serverVC = [[ServerViewController alloc] init];
+    }
+    
+    return _serverVC;
+}
 @end
